@@ -814,10 +814,10 @@
         } else if(mode==23) {
 
           ////////////////////////////
-          // Star III Cup Series
+          // Star II Cup Series
           // Scheduled
 
-          // Star III Cup has no league, single-column
+          // Star II Cup has no league, single-column
           var leagueContainerElem = document.getElementById('scs-league-waiting-container');
           for (let g in currGamesApiResult) {
             var game = currGamesApiResult[g];
@@ -1111,7 +1111,7 @@
         } else if (mode==33) {
 
           ////////////////////////////
-          // Star III Cup Series
+          // Star II Cup Series
           // In progress
 
           // SCS has no league, single-column
