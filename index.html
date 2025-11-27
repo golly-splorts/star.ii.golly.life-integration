@@ -23,13 +23,13 @@ var mapsApiUrl = 'https://maps.golly456.life';
 
     <!--
         Versions:
-        gollyx-star-ii-pelican: 613.0
-        gollyx-star-ii-pelican-theme: 614.0
+        gollyx-star-ii-pelican: 614.0
+        gollyx-star-ii-pelican-theme: 614.1
     -->
 
-    <link href="https://star.ii.integration.golly456.life/theme/css/flipdown.min.css"  rel="stylesheet" type="text/css">
-    <!-- re-include custom.css to override some flipdown.css settings -->
-    <link href="https://star.ii.integration.golly456.life/theme/css/custom.css"  rel="stylesheet" type="text/css">
+  <link href="https://star.ii.integration.golly456.life/theme/css/flipdown.min.css"  rel="stylesheet" type="text/css">
+  <!-- re-include custom.css to override some flipdown.css settings -->
+  <link href="https://star.ii.integration.golly456.life/theme/css/custom.css"  rel="stylesheet" type="text/css">
 
 </head>
 <body id="index">
@@ -130,7 +130,7 @@ var mapsApiUrl = 'https://maps.golly456.life';
 
         <!-- maps -->
         <li class="nav-item">
-            <a class="nav-link" href="https://star.ii.integration.golly456.life/maps.html">Maps</a>
+          <a class="nav-link" href="https://star.ii.integration.golly456.life/maps.html">Maps</a>
         </li>
 
         <!-- simulator -->
@@ -143,7 +143,7 @@ var mapsApiUrl = 'https://maps.golly456.life';
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes">
               Cups <span class="caret"></span>
           </a>
-          <div id="navbar-cups-dropdown-menu" class="dropdown-menu" aria-labelledby="themes">
+          <div id="navbar-cups-dropdown-menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="themes">
             <a class="dropdown-item" href="https://hellmouth.golly.life">Hellmouth Cup</a>
             <a class="dropdown-item" href="https://pseudo.golly.life">Pseudo Cup</a>
             <a class="dropdown-item" href="https://toroidal.golly.life">Toroidal Cup</a>
@@ -153,14 +153,6 @@ var mapsApiUrl = 'https://maps.golly456.life';
             <a class="dropdown-item" href="https://klein.golly.life">Klein Cup</a>
             <a class="dropdown-item" href="https://ii.golly.life">Hellmouth II Cup</a>
             <a class="dropdown-item" href="https://star.ii.golly.life">Star II Cup</a>
-            <a class="dropdown-item" href="https://iii.golly.life">Hellmouth III Cup</a>
-            <a class="dropdown-item" href="https://star.iii.golly.life">Star III Cup</a>
-            <a class="dropdown-item" href="https://iv.golly.life">Hellmouth IV Cup</a>
-            <a class="dropdown-item" href="https://star.iv.golly.life">Star IV Cup</a>
-            <a class="dropdown-item" href="https://v.golly.life">Hellmouth V Cup</a>
-            <a class="dropdown-item" href="https://star.v.golly.life">Star V Cup</a>
-            <a class="dropdown-item" href="https://vi.golly.life">Hellmouth VI Cup</a>
-            <a class="dropdown-item" href="https://star.vi.golly.life">Star VI Cup</a>
           </div>
         </li>
 
@@ -169,7 +161,7 @@ var mapsApiUrl = 'https://maps.golly456.life';
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes">
               About<span class="caret"></span>
           </a>
-          <div id="navbar-about-dropdown-menu" class="dropdown-menu" aria-labelledby="themes">
+          <div id="navbar-about-dropdown-menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="themes">
             <a class="dropdown-item" href="https://wiki.golly.life">Golly.Life Wiki</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Star_II_Cup">About the Star II Cup</a>
             <a class="dropdown-item" href="https://wiki.golly.life/wiki/Star_II_Cup/Rules">Star II Cup Rules</a>
@@ -180,7 +172,6 @@ var mapsApiUrl = 'https://maps.golly456.life';
     </div>
   </div>
 </div>
-
 
 <template id="minilife-template">
 <!-- minilife include template -->
@@ -506,7 +497,6 @@ add this to pelican pages:
     </div>
     <!-- end seed table template --></template>
 
-
 <div class="container invisible" id="container-loading">
 
   <div class="row text-center notify-header invisible loading-message" id="season-loading-message">
@@ -550,19 +540,18 @@ add this to pelican pages:
         <h2>Season <span id="landing-header-season-number">_</span><span style="display: none;" id="landing-header-day"> Day <span id="landing-header-day-number">_</span></span>: Current Games</h2>
       </div>
     </div>
-
     <div class="row text-center notify-header invisible loading-message" id="mode1019-loading-message">
       <div class="col-lg-12">
         <h4 class="text-success">The site is currently loading...</h4>
       </div>
     </div>
 
-    <div class="row justify-content-md-center" id="season-leagues-container">
-      <div class="col-sm-5 league-container" id="league-1-container">
+    <div class="row justify-content-center ongoing-container lds-ongoing-container d-flex align-items-stretch">
+      <div class="col-lg-5 col-md-6 league-container" id="league-1-container">
         <h4 class="text-center league-container-header" id="league-1-header"><span id="league-1-name"></span></h4>
       </div>
 
-      <div class="col-sm-5 league-container" id="league-2-container">
+      <div class="col-lg-5 col-md-6 league-container" id="league-2-container">
         <h4 class="text-center league-container-header" id="league-2-header"><span id="league-2-name"></span></h4>
       </div>
     </div>
@@ -575,7 +564,7 @@ add this to pelican pages:
 
     <div class="row text-center landing-header">
       <div class="col-lg-12">
-        <h2>Season <span id="landing-header-season-number">_</span>: Star II Cup League Division Series</h2>
+        <h2>Season <span id="landing-header-season-number">_</span>: League Division Series</h2>
         <h4>This best of 5 series will begin soon!</h4>
       </div>
     </div>
@@ -590,12 +579,12 @@ add this to pelican pages:
       </div>
     </div>
 
-    <div class="row justify-content-md-center waiting-container" id="lds-waiting-container">
-      <div class="col-sm-5 league-container" id="league-1-container">
+    <div class="row justify-content-center waiting-container d-flex align-items-stretch" id="lds-waiting-container">
+      <div class="col-lg-5 col-md-6 league-container" id="league-1-container">
         <h4 class="text-center league-container-header" id="league-1-header"><span id="league-1-name"></span></h4>
       </div>
 
-      <div class="col-sm-5 league-container" id="league-2-container">
+      <div class="col-lg-5 col-md-6 league-container" id="league-2-container">
         <h4 class="text-center league-container-header" id="league-2-header"><span id="league-2-name"></span></h4>
       </div>
     </div>
@@ -612,7 +601,7 @@ add this to pelican pages:
 
     <div class="row text-center landing-header">
       <div class="col-lg-12">
-        <h2>Season <span id="landing-header-season-number">_</span>: Star II Cup League Championship Series</h2>
+        <h2>Season <span id="landing-header-season-number">_</span>: League Championship Series</h2>
         <h4>This best of 7 series will begin soon!</h4>
       </div>
     </div>
@@ -627,12 +616,12 @@ add this to pelican pages:
       </div>
     </div>
 
-    <div class="row justify-content-md-center waiting-container" id="lcs-waiting-container">
-      <div class="col-sm-5 league-container" id="league-1-container">
+    <div class="row justify-content-center waiting-container d-flex align-items-stretch" id="lcs-waiting-container">
+      <div class="col-lg-5 col-md-6 league-container" id="league-1-container">
         <h4 class="text-center league-container-header" id="league-1-header"><span id="league-1-name"></span></h4>
       </div>
 
-      <div class="col-sm-5 league-container" id="league-2-container">
+      <div class="col-lg-5 col-md-6 league-container" id="league-2-container">
         <h4 class="text-center league-container-header" id="league-2-header"><span id="league-2-name"></span></h4>
       </div>
     </div>
@@ -663,7 +652,7 @@ add this to pelican pages:
       </div>
     </div>
 
-    <div class="row justify-content-md-center waiting-container" id="scs-waiting-container">
+    <div class="row justify-content-center waiting-container" id="scs-waiting-container">
       <div class="col-lg-4 league-container" id="scs-league-waiting-container">
       </div>
     </div>
@@ -679,7 +668,7 @@ add this to pelican pages:
 
     <div class="row text-center landing-header">
       <div class="col-lg-12">
-        <h2>Season <span id="landing-header-season-number">_</span>: Star II Cup League Division Series</h2>
+        <h2>Season <span id="landing-header-season-number">_</span>: League Division Series</h2>
         <h4>Best of 5</h4>
       </div>
     </div>
@@ -690,12 +679,12 @@ add this to pelican pages:
       </div>
     </div>
 
-    <div class="row justify-content-md-center ongoing-container lds-ongoing-container">
-      <div class="col-sm-5 league-container" id="league-1-container">
+    <div class="row justify-content-center ongoing-container lds-ongoing-container">
+      <div class="col-lg-5 col-md-6 league-container" id="league-1-container">
         <h4 class="text-center league-container-header" id="league-1-header"><span id="league-1-name"></span></h4>
       </div>
 
-      <div class="col-sm-5 league-container" id="league-2-container">
+      <div class="col-lg-5 col-md-6 league-container" id="league-2-container">
         <h4 class="text-center league-container-header" id="league-2-header"><span id="league-2-name"></span></h4>
       </div>
     </div>
@@ -711,7 +700,7 @@ add this to pelican pages:
 
     <div class="row text-center landing-header">
       <div class="col-lg-12">
-        <h2>Season <span id="landing-header-season-number">_</span>: Star II Cup League Championship Series</h2>
+        <h2>Season <span id="landing-header-season-number">_</span>: League Championship Series</h2>
         <h4>Best of 7</h4>
       </div>
     </div>
@@ -722,12 +711,12 @@ add this to pelican pages:
       </div>
     </div>
 
-    <div class="row justify-content-md-center ongoing-container" id="lcs-ongoing-container">
-      <div class="col-sm-5 league-container" id="league-1-container">
+    <div class="row justify-content-center ongoing-container d-flex align-items-stretch" id="lcs-ongoing-container">
+      <div class="col-lg-5 col-md-6 league-container" id="league-1-container">
         <h4 class="text-center league-container-header" id="league-1-header"><span id="league-1-name"></span></h4>
       </div>
 
-      <div class="col-sm-5 league-container" id="league-2-container">
+      <div class="col-lg-5 col-md-6 league-container" id="league-2-container">
         <h4 class="text-center league-container-header" id="league-2-header"><span id="league-2-name"></span></h4>
       </div>
     </div>
@@ -754,7 +743,7 @@ add this to pelican pages:
       </div>
     </div>
 
-    <div class="row justify-content-md-center ongoing-container" id="scs-ongoing-container">
+    <div class="row justify-content-center ongoing-container" id="scs-ongoing-container">
       <div class="col-lg-4 league-container" id="scs-league-ongoing-container">
       </div>
     </div>
